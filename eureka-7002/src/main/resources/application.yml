@@ -1,0 +1,15 @@
+server:
+  port: 7002
+
+
+eureka:
+  instance:
+    hostname: eureka7002.com   # eureka-7002 hostname
+
+  client:
+    register-with-eureka: false  # NOT register eureka itself to registry
+    fetch-registry: false  # NOT search eureka itself at registry
+    service-url:
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  # Stand alone version, define euraka-server address
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/ # multi-machine version
+

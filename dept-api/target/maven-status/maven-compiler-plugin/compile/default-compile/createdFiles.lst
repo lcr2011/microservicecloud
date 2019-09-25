@@ -1,0 +1,3 @@
+com\eshaon\springcloud\entities\Dept.class
+com\eshaon\springcloud\entities\service\DeptClientService.class
+com\eshaon\springcloud\entities\TestClass.class
